@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, Heading, Text, Tooltip } from "@chakra-ui/react";
 import { FiInfo } from "react-icons/fi";
 
 interface ContinentDescriptionProps {
@@ -52,12 +52,14 @@ export function ContinentDescription({
         <Flex direction="column" align="center" justify="center">
           <Heading color="yellow.300">50</Heading>
           <Flex align="center" justify="center">
-            <Text color="gray.500" fontWeight="bold">
+            <Text color="gray.500" fontWeight="bold" mr="2">
               cidades +100{" "}
             </Text>
-            <Box ml="2" color="gray.400">
-              <FiInfo color="gray.200" />
-            </Box>
+            <Tooltip hasArrow label="More of 100 cities" color="gray.400">
+              <button>
+                <FiInfo color="gray.200" />
+              </button>
+            </Tooltip>
           </Flex>
         </Flex>
       </Grid>

@@ -73,7 +73,7 @@ export default function Continent({ continentData }: ContinentData) {
         backgroundRepeat="no-repeat"
         align="flex-end"
       >
-        <Heading mb="30" pl="4" color="white">
+        <Heading mb="30" pl="12" color="white">
           {continentData.title}
         </Heading>
       </Flex>
