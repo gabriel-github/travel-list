@@ -1,0 +1,22 @@
+.swiper-button-next {
+  right: 45px;
+}
+
+.swiper-button-prev {
+  left: 45px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  color: orange;
+}
+
+span.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background: #99999999;
+  opacity: 1;
+}
+
+span.swiper-pagination-bullet-active {
+  background: orange;
+}
