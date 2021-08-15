@@ -22,19 +22,20 @@ export function ContinentDescription({
         textAlign="left"
         display="flex"
         h="100%"
-        maxW="600px"
+        w={["100%", "100%", "100%", "100%", "45%"]}
       >
         {description}
       </Text>
 
       <Grid
-        w={["800px", "800px", "800px", "800px", "500px"]}
+        w={["100%", "100%", "100%", "100%", "50%"]}
         h="100%"
         align="center"
         templateColumns="repeat(3, 1fr)"
         justify="center"
         ml="4"
-        mt={["8", "8", "0"]}
+        mt={["8", "8", "8"]}
+        maxW={500}
       >
         <Flex direction="column" align="center" px="8" justify="center">
           <Heading color="yellow.300">50</Heading>
